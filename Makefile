@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-DEBUG_APK=mesh-debug.apk
+DEBUG_APK=tailscale-debug.apk
 RELEASE_AAB=tailscale-release.aab
 APPID=com.tailscale.ipn
 AAR=android/libs/ipn.aar
