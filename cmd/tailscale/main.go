@@ -431,7 +431,10 @@ func (a *App) runBackend() error {
 				go b.backend.SetPrefs(state.Prefs)
 			case WebAuthEvent:
 				if !signingIn {
-					go b.backend.StartLoginInteractive()
+					//go b.backend.StartLoginInteractive()
+					//signingIn = true
+					time.Sleep(time.Second * 2)
+					requestBackend(OAuth2Event{})
 					signingIn = true
 				}
 			case SetLoginServerEvent:
